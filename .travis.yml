@@ -5,8 +5,12 @@ services:
   - docker
 
 go:
-  - 1.13.x
-  - master
+  - 1.14.x
+  - tip
+
+matrix:
+  allow_failures:
+    - go: tip
 
 cache:
   directories:
